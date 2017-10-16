@@ -1,0 +1,101 @@
+/*GENERAL*/
+* {
+  box-sizing: border-box;
+  border:1px solid black;
+}
+body {
+  font-family: 'Old Standard TT', serif;
+  color: #594448;
+  background-color: #c9e7f0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  color: #594448;
+}
+a {
+  text-decoration: none;
+  color: #594448;
+}
+i {
+  color: #69b4d4;
+}
+.getStarted {
+  background-color: #b5523b;
+  color: #c9e7f0;
+}
+
+/*NAVIGATION*/
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+header nav {
+  height:40px;
+  background-color: #69b4d4;
+}
+nav img{
+  max-width: 18%;
+}
+.navLinks {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*HEADER*/
+.hello {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+}
+.hello h1 {
+  font-size: 60px;
+}
+.hello p {
+  font-size: 20px;
+}
+.christina {
+  max-width: 100%;
+  margin-top: 5%;
+}
+header .scroll {
+  font-size: 50px;
+  text-align: center;
+}
+
+/*INFO*/
+.infoHeading {
+  background-color: #b5523b;
+}
+.infoHeading h2 {
+  color: #c9e7f0;
+}
+
+/*TESTIMONIALS*/
+.testimonials {
+  background-color: #69b4d4;
+  color: #c9e7f0;
+}
+.testimonials i {
+  color: #c9e7f0;
+}
+.testimonialsButton {
+  text-align: center;
+}
+
+/*ABOUT*/
+.aboutMe {
+  background-image: url("../images/aboutMe.jpg");
+  max-width: 100%;
+  opacity: 0.5;
+  /*->this makes everything else's opactiy lower - how do I just target the image?*/
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  text-align: center;
+  flex-direction: column-reverse;
+}
