@@ -19,9 +19,16 @@ a {
 i {
   color: #69b4d4;
 }
+i:hover {
+  color: #b5523b;
+}
 .getStarted {
   background-color: #b5523b;
   color: #c9e7f0;
+}
+.getStarted:hover {
+  background-color: #69b4d4;
+  color: #b5523b;
 }
 
 /*NAVIGATION*/
@@ -42,14 +49,11 @@ nav img{
   flex-direction: row;
   justify-content: space-between;
 }
-nav.socialMedia {
-  position:static;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 
 /*HELLO*/
+.hello {
+  height: 100vh;
+}
 .helloContent {
   display: flex;
   align-items: center;
@@ -69,12 +73,29 @@ nav.socialMedia {
   max-width: 100%;
   margin-top: 5%;
 }
+nav.socialMedia {
+  position:static;
+}
+nav.socialMedia a {
+  margin: 2%;
+}
+.helloButton {
+  padding: 2%;
+}
+.helloButton .getStarted {
+  padding: 10%;
+}
 .scroll {
   font-size: 50px;
   text-align: center;
+  margin-top: 5%;
 }
 
 /*INFO*/
+.info {
+  height: 100vh;
+  padding-top: 2%;
+}
 .infoHeading {
   background-color: #b5523b;
 }
@@ -86,6 +107,7 @@ nav.socialMedia {
 .testimonials {
   background-color: #69b4d4;
   color: #c9e7f0;
+  height: 100vh;
 }
 .testimonials i {
   display: flex;
@@ -102,14 +124,24 @@ nav.socialMedia {
 /*ABOUT*/
 .about {
   background-image: url("../images/aboutMe.jpg");
+  padding-top: 2%;
   max-width: 100%;
-  opacity: 0.5;
-  height: 94vh;
+  height: 100vh;
+}
+
+/*SERVICES*/
+.services {
+  padding-top: 2%;
+  height: 93vh;
+}
+
+/*GET STARTED*/
+.contact {
+  padding-top: 2%;
+  height: 93vh;
 }
 
 /*FOOTER*/
 footer {
   text-align: center;
-  margin-left: 0;
-  padding: 0;
 }
