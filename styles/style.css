@@ -1,7 +1,7 @@
 /*GENERAL*/
 * {
   box-sizing: border-box;
-  /*border:1px solid black;*/
+  border:1px solid black;
 }
 body {
   font-family: 'Old Standard TT', serif;
@@ -42,7 +42,7 @@ header nav {
   background-color: #69b4d4;
 }
 nav img{
-  max-width: 18%;
+  width: 18%;
 }
 .navLinks {
   display:flex;
@@ -114,6 +114,11 @@ nav.socialMedia a {
 /*SERVICES*/
 .services {
   height: 100vh;
+  text-align: center;
+  padding-top: 10%;
+}
+.services h2 {
+  font-size: 30px;
 }
 
 #servSlide{
@@ -121,7 +126,7 @@ nav.socialMedia a {
   max-width: 600px;
 }
 #servSlide .flexslider {
-  background-color: #69b4d4;
+  background-color: #c9e7f0;
   border: none;
 }
 #servSlide .slides li{
@@ -130,7 +135,7 @@ nav.socialMedia a {
 }
 #servSlide .slides li h3{
   width: 100%;
-  color: #c9e7f0;
+  color: #69b4d4;
   text-align: center;
   padding: 5%;
 }
@@ -147,15 +152,41 @@ nav.socialMedia a {
 
 
 
-/*GET STARTED*/
-.getstarted {
+/*CONTACT*/
+.contact {
   height: 94vh;
 }
+.contact h2 {
+}
+.contForm {
+  padding: 10%;
+}
+.contact label {
+  text-align: right;
+}
+.contact button {
+  text-align: center;
+  margin: 2% 0;
+  padding: 2% 0;
+  font-family: 'Old Standard TT', serif;
+  border: 1px solid #594448;
+  color: #594448;
+}
+.contact button:hover{
+  background-color: #69b4d4;
+  border: 1px solid #594448;
+  color: #c9e7f0;
+}
+
 
 /*FOOTER*/
 footer {
   text-align: center;
 }
+
+
+
+
 
 /*MOBILE MENU STYLES*/
 #mobile-navigation{

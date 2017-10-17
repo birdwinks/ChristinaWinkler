@@ -16,7 +16,7 @@ layout: default
             <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </nav>
           <div class="helloButton col-3">
-            <a href="#getstarted" class="getStarted">GET STARTED</a>
+            <a href="#contact" class="getStarted">GET STARTED</a>
           </div>
         </div>
         <div class="col-5 helloImage">
@@ -41,13 +41,13 @@ layout: default
 
 <!-- ABOUT ME -->
     <section id="about" class="about">
-      <h1>Nice to meet you.</h1>
+      <h2>Nice to meet you.</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
 
 <!-- SERVICES -->
     <section id="services" class="services">
-      <h1>How can I help you today?</h1>
+      <h2>How can I help you today?</h2>
       <div id="servSlide">
         <div class="flexslider">
           <ul class="slides">
@@ -73,9 +73,9 @@ layout: default
     </section>
 
 <!-- FORM -->
-    <section id="getstarted" class="getstarted">
+    <section id="contact" class="contact">
       <h2>Let's get to business.</h2>
-      <div>
+      <div class="contForm">
         <form class="grid" method="POST" action="http://formspree.io/hello@christinawinkler.com">
           <label class="col-4" for="name">NAME</label>
           <input class="col-8" type="text" name="name">
@@ -97,7 +97,9 @@ layout: default
           </div>
           <label class="col-4" for="message">TELL ME MORE</label>
           <textarea class="col-8" name="message"></textarea>
-          <button class="col-7" type="submit">Send</button>
+          <div class="col-8 .grid-right">
+            <button class="col-12" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </section>
