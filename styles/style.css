@@ -94,7 +94,6 @@ nav.socialMedia a {
 /*INFO*/
 .info {
   height: 100vh;
-  padding-top: 2%;
 }
 .infoHeading {
   background-color: #b5523b;
@@ -102,24 +101,6 @@ nav.socialMedia a {
 }
 .infoHeading h2 {
   color: #c9e7f0;
-}
-
-/*TESTIMONIALS*/
-.testimonials {
-  background-color: #69b4d4;
-  color: #c9e7f0;
-  height: 93vh;
-}
-.testimonials i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #c9e7f0;
-  font-size: 80px;
-}
-.testimonialsButton {
-  text-align: center;
 }
 
 /*ABOUT*/
@@ -132,14 +113,12 @@ nav.socialMedia a {
 
 /*SERVICES*/
 .services {
-  padding-top: 2%;
-  height: 93vh;
+  height: 100vh;
 }
 
 /*GET STARTED*/
-.contact {
-  padding-top: 2%;
-  height: 93vh;
+.getstarted {
+  height: 100vh;
 }
 
 /*FOOTER*/
