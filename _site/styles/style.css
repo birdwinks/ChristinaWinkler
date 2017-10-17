@@ -116,9 +116,40 @@ nav.socialMedia a {
   height: 100vh;
 }
 
+#servSlide{
+  margin: 0 auto;
+  max-width: 600px;
+}
+#servSlide .flexslider {
+  background-color: #69b4d4;
+  border: none;
+}
+#servSlide .slides li{
+  position: relative;
+  height: 300px;
+}
+#servSlide .slides li h3{
+  width: 100%;
+  color: #c9e7f0;
+  text-align: center;
+  padding: 5%;
+}
+#servSlide .slides li p{
+  padding: 0 10%;
+  text-align: center;
+}
+
+  /* HELPERS */
+.add-object-fit{
+  object-fit: cover;
+}
+
+
+
+
 /*GET STARTED*/
 .getstarted {
-  height: 100vh;
+  height: 94vh;
 }
 
 /*FOOTER*/

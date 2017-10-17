@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css">
     <!-- Fonts from Google - CHOOSE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Oswald:700" rel="stylesheet">
-    <!-- Stylesheet -->
+    <!-- JavaScript Slider Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css">
+    <!-- My own Stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- Link to pull icons -->
     <script src="https://use.fontawesome.com/1199651437.js"></script>
@@ -100,43 +102,34 @@
 <!-- SERVICES -->
     <section id="services" class="services">
       <h1>How can I help you today?</h1>
-      <div class="grid-spaceAround">
-        <div class="col-3">
-          <h2>web development</h2>
+      <div id="servSlide">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </li>
+            <li>
+              <h3>Writing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </li>
+            <li>
+              <h3>Digital Marketing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </li>
+            <li>
+              <h3>Coaching</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </li>
+          </ul>
         </div>
-        <div class="col-3">
-          <h2>writing</h2>
-        </div>
-        <div class="col-3">
-          <h2>digital marketing</h2>
-        </div>
-        <div class="col-3">
-          <h2>coaching</h2>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="col-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="col-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="col-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="col-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <div>
-        <h2>Testimonials</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </section>
 
 <!-- FORM -->
     <section id="getstarted" class="getstarted">
-      <h1>Let's get to business.</h1>
+      <h2>Let's get to business.</h2>
+      <div>
         <form class="grid" method="POST" action="http://formspree.io/hello@christinawinkler.com">
           <label class="col-4" for="name">NAME</label>
           <input class="col-8" type="text" name="name">
@@ -160,6 +153,7 @@
           <textarea class="col-8" name="message"></textarea>
           <button class="col-7" type="submit">Send</button>
         </form>
+      </div>
     </section>
 
 
@@ -170,6 +164,7 @@
     </footer>
   <!-- add JavaScript & jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="/javascript/scripts.js"></script>
   </body>
 </html>

@@ -32,7 +32,6 @@ function scrollToSection(event) {
 }
 
 // Bind events
-
 $('a').on('click', scrollToSection);
 
 
@@ -51,10 +50,26 @@ function changeBodyClass(event) {
 
 }
 
-/*
-**  Bind events
-*/
+// Bind events
 $('a').on('click', changeBodyClass);
+
+
+
+// ADD SLIDER
+// Send a message to console after window load
+console.log('Window loaded!');
+
+// Assign flexslider functoin to class .flexslider
+$('.flexslider').flexslider({
+
+  // Customize flexslider properties
+  animation: "slide",
+  slideshowSpeed: 5000,
+  animationSpeed: 1000,
+  slideshow: false,
+  directionNav: false
+
+});
 
 //closing jQuery
 });
