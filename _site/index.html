@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- meta tage for responsive design -->
+  <!-- meta tag for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS normalize - to be same across all browsers -->
+  <!-- CSS normalize - to be same across all browsers -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- Gridlex - adding grids -->
+  <!-- Gridlex - adding grids -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css">
-    <!-- Fonts from Google - CHOOSE FONTS -->
+  <!-- Fonts from Google - CHOOSE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Oswald:700" rel="stylesheet">
-    <!-- JavaScript Slider Stylesheet -->
+  <!-- JavaScript sticky element Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.5/gridlex.min.css">
+  <!-- JavaScript FlexSlider Stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css">
-    <!-- My own Stylesheet -->
+  <!-- My own Stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
-    <!-- Link to pull icons -->
+  <!-- Link to pull icons -->
     <script src="https://use.fontawesome.com/1199651437.js"></script>
   </head>
   <body>
 
 <!-- HEADER -->
     <header>
-      <nav class="grid-spaceBetween mob-hide">
-        <div class="col-2">
-          <a href="#home"><img src="images/logo.png" alt="my logo"></a>
+      <div class="container">
+        <div class="fixed">
+          <div class="bg-menu transition"></div>
+          <nav id="sticky-menu" class="menu grid-spaceBetween mob-hide">
+            <div class="col-2">
+              <a href="#home"><img src="images/logo.png" alt="my logo"></a>
+            </div>
+            <div class="col-5 menuLinks">
+              <a href="#home">home</a>
+              <a href="#about">about</a>
+              <a href="#services">services</a>
+              <a href="http://birdwinks.com" target="_blank">blog</a>
+              <a href="#contact" class="getStarted">GET STARTED</a>
+            </div>
+          </nav>
         </div>
-        <div class="col-5 navLinks">
-          <a href="#home">home</a>
-          <a href="#about">about</a>
-          <a href="#services">services</a>
-          <a href="http://birdwinks.com" target="_blank">blog</a>
-          <a href="#contact" class="getStarted">GET STARTED</a>
-        </div>
-      </nav>
+      </div>
+
 
       <!-- MOBILE NAV -->
       <div id="container" class="mob-show">
@@ -83,6 +91,8 @@
       </div>
     </section>
 
+
+
 <!-- INFO -->
     <section id="info" class="info">
       <div class="infoHeading">
@@ -93,11 +103,15 @@
       </div>
     </section>
 
+
+
 <!-- ABOUT ME -->
     <section id="about" class="about">
       <h2>Nice to meet you.</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
+
+
 
 <!-- SERVICES -->
     <section id="services" class="services">
@@ -124,7 +138,12 @@
           </ul>
         </div>
       </div>
+      <div>
+        <a href="#contact" class="getStarted">GET STARTED</a>
+      </div>
     </section>
+
+
 
 <!-- FORM -->
     <section id="contact" class="contact">
@@ -164,9 +183,13 @@
     <footer>
       <p>christinawinkler.com © Copyright 2017</p>
     </footer>
-  <!-- add JavaScript & jQuery -->
+<!-- add JavaScript & jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- sticky elements JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+<!-- flexslider JS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
+<!-- Link to my JS file -->
     <script type="text/javascript" src="/javascript/scripts.js"></script>
   </body>
 </html>

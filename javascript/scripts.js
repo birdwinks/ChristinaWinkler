@@ -3,8 +3,10 @@ $( document ).ready(function() {
     //console.log( "ready!" );
     //jQuery starts
 
-// SMOOTH SCROLL
 
+
+
+// SMOOTH SCROLL
 function scrollToSection(event) {
 
   // Log
@@ -30,9 +32,31 @@ function scrollToSection(event) {
   });
 
 }
-
 // Bind events
 $('a').on('click', scrollToSection);
+
+
+
+
+// STICKY MENU
+// Attach sticky function to ID "sticky-menu"
+// $("#sticky-menu").sticky({
+//   topSpacing: 0
+// });
+
+$(window).scroll(function() {
+
+	if ($(window).scrollTop() > 50 ){
+
+ 		$('.bg-menu').addClass('show');
+
+  } else {
+
+    $('.bg-menu').removeClass('show');
+
+ 	};
+});
+
 
 
 
@@ -49,9 +73,9 @@ function changeBodyClass(event) {
   $('#container').toggleClass('mobile-menu-visible');
 
 }
-
 // Bind events
 $('a').on('click', changeBodyClass);
+
 
 
 
@@ -70,6 +94,9 @@ $('.flexslider').flexslider({
   directionNav: false
 
 });
+
+
+
 
 //closing jQuery
 });
