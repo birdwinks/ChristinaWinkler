@@ -18,7 +18,7 @@
 
 <!-- HEADER -->
     <header>
-      <nav class="grid-spaceBetween">
+      <nav class="grid-spaceBetween mob-hide">
         <div class="col-2">
           <a href="index.html"><img src="images/logo.png" alt="my logo"></a>
         </div>
@@ -30,11 +30,31 @@
           <a href="getstarted.html" class="getStarted">GET STARTED</a>
         </div>
       </nav>
+
+      <!-- MOBILE NAV -->
+      <div id="container" class="mob-show">
+        <nav>
+          <a href="#home" title="Home" class="toggle-mobile-menu">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+          </a>
+        </nav>
+        <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
+          <a class="col-12 center toggle-mobile-menu" href="#home">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">About</a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">Portfolio</a>
+          <a class="col-12 center" href="#home" class="toggle-mobile-menu">Contact</a>
+        </nav>
+      </div>
+      <!-- END OF MOBILE NAV -->
+
     </header>
 
 
 <!-- HELLO -->
-    <section class="hello">
+    <section id="home" class="hello">
       <div class="grid helloContent">
         <div class="col-7 grid-center">
           <h1 class="col-12">Hello, I'm Christina.</h1>

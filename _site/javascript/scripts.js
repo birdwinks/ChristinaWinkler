@@ -3,7 +3,7 @@ $( document ).ready(function() {
     //console.log( "ready!" );
     //jQuery starts
 
-// smooth scroll
+// SMOOTH SCROLL
 
 function scrollToSection(event) {
 
@@ -28,12 +28,33 @@ function scrollToSection(event) {
     window.location.hash = hash;
 
   });
-   
+
 }
 
 // Bind events
 
 $('a').on('click', scrollToSection);
+
+
+
+// MOBILE MENU
+function changeBodyClass(event) {
+
+  // Log
+  console.log('Clicked on toggle menu class');
+
+  // Prevent default event (clicking a link)
+  event.preventDefault();
+
+  // Toggle body class
+  $('#container').toggleClass('mobile-menu-visible');
+
+}
+
+/*
+**  Bind events
+*/
+$('a').on('click', changeBodyClass);
 
 //closing jQuery
 });
