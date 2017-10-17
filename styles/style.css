@@ -98,6 +98,7 @@ nav.socialMedia a {
 }
 .infoHeading {
   background-color: #b5523b;
+  padding-bottom: 5%;
 }
 .infoHeading h2 {
   color: #c9e7f0;
@@ -107,7 +108,7 @@ nav.socialMedia a {
 .testimonials {
   background-color: #69b4d4;
   color: #c9e7f0;
-  height: 100vh;
+  height: 93vh;
 }
 .testimonials i {
   display: flex;
