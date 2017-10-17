@@ -94,17 +94,23 @@ layout: default
           <input class="col-8" type="email" name="email">
           <label class="col-4" for="checkbox">WHAT DO YOU NEED?</label>
           <div class="col-8 grid">
-            <div class="col-1">
-              <input type="checkbox" name="web developer">
+            <div class="col-6">
+              <input id="check1" type="checkbox" name="web developer">
+              <label for="check1">web developer</label>
             </div>
-            <p class="col-5">web developer</p>
-            <input class="col-1" type="checkbox" name="writer">
-            <p class="col-5">writer</p>
-            <input class="col-1" type="checkbox" name="digital marketer">
-            <p class="col-5">digital marketer</p>
-            <input class="col-1" type="checkbox" name="coach">
-            <p class="col-5">coach</p>
-            <p class="col-10">(Not sure? Have a look <a href="#">here</a>)</p>
+            <div class="col-6">
+              <input id="check2" type="checkbox" name="writer">
+              <label for="check2">writer</label>
+            </div>
+            <div class="col-6">
+              <input id="check3" type="checkbox" name="digital marketer">
+              <label for="check3">digital marketer</label>
+            </div>
+            <div class="col-6">
+              <input id="check4" type="checkbox" name="coach">
+              <label for="check4">coach</label>
+            </div>
+            <p class="col-10 sure">(Not sure? Have a look <a href="#services">here</a>.)</p>
           </div>
           <label class="col-4" for="message">TELL ME MORE</label>
           <textarea class="col-8" name="message"></textarea>

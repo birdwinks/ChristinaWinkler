@@ -38,10 +38,6 @@ i:hover {
 nav img{
   width: 18%;
 }
-/*over-writing js stylesheet so that menu stays in front*/
-/*.menu {
-  z-index: 999 !important;
-}*/
 
 /*making sticky menu fade on scrolling*/
 .navContainer {
@@ -73,10 +69,8 @@ nav img{
 .menu {
   margin: -50px auto 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
-
-
 
 
 .menuLinks {
@@ -94,7 +88,7 @@ nav img{
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 2%;
+  margin: 5%;
 }
 .hello h1 {
   font-size: 60px;
@@ -153,10 +147,10 @@ nav.socialMedia a {
 }
 .about h2 {
   text-align: right;
-  padding: 2% 5% 0 0;
+  padding: 10% 5% 0 0;
 }
 .about p {
-  padding: 10%;
+  padding: 10% 50% 10% 10%;
 }
 
 
@@ -206,15 +200,19 @@ nav.socialMedia a {
   height: 94vh;
 }
 .contact h2 {
-  padding: 5% 0 0 10%;
-  background-color: #d3d3d3;
+  padding: 10% 0 0 10%;
   color: #b5523b;
 }
 .contForm {
-  padding: 10% 25% 10% 10%;
+  padding: 5% 25% 0 10%;
+}
+.contact input, .contact textarea {
+  margin: 1% 0;
+  border: 1px solid #594448;
 }
 .contact label {
   text-align: right;
+  margin: 1% 0;
 }
 .contact button {
   text-align: center;
@@ -228,6 +226,15 @@ nav.socialMedia a {
   background-color: #69b4d4;
   border: 1px solid #594448;
   color: #c9e7f0;
+}
+.sure {
+  font-size: 14px;
+}
+.sure a {
+  color: #b5523b;
+}
+.sure a:hover {
+  text-decoration: underline;
 }
 
 
