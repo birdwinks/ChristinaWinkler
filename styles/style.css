@@ -49,6 +49,9 @@ i:hover {
   background-color: #69b4d4;
   color: #b5523b;
 }
+.scroll-show {
+  display: none;
+}
 
 /*NAVIGATION*/
 
@@ -99,6 +102,9 @@ i:hover {
 
 
 /*HELLO*/
+.hello-show {
+  display: none;
+}
 .hello {
   height: 100vh;
 }
@@ -311,7 +317,7 @@ footer {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 20;
   visibility: hidden;
   opacity: 0;
   transform: scale(.96);
@@ -320,6 +326,13 @@ footer {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
+}
+.toggle-mobile-menu {
+  position: fixed;
+  z-index: 999;
+}
+#container i {
+  color: #69b4d4 !important;
 }
 
 /* HELPERS */
@@ -332,13 +345,13 @@ footer {
 .round-corners{
   border-radius: 4px;
 }
-.bg-yellow{
+.bg{
   background-color: #c9e7f0;
 }
 .center{
   text-align: center;
 }
-#container nav i {
+#container .hamburger i {
   color: #b5523b;
 }
 .animate{
@@ -347,16 +360,113 @@ footer {
 
   /*define when to show mobile menu*/
 
-.mob-show {
+.nav-show {
   display: none;
 }
 
-/*mobile responsive styles*/
+
+
+
+/*MOBILE RESPONSIVE STYLES*/
+
 @media all and (max-width:767px){
-  .mob-show {
+
+  /*mobile navigation*/
+  .nav-show {
     display: block;
   }
-  .mob-hide {
+  .nav-hide {
     display: none;
+  }
+  .scroll-show {
+    display: block;
+  }
+
+
+  /*fixing mobile height of sections*/
+  .hello, .info, .about, .services {
+    min-height: 100vh;
+  }
+  .contact {
+    min-height: 94vh;
+  }
+
+
+  /*general styling*/
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .scroll-show i {
+    color: #b5523b !important;
+    font-size: 30px;
+  }
+
+
+  /*hello screen*/
+  .hello-show {
+    display: block;
+  }
+
+  .hello-show .helloImage{
+    max-width: 60%;
+    margin: -10% 0 0 0;
+    padding: 0;
+  }
+  .hello-show i {
+    font-size: 20px;
+  }
+  .hello-show .scroll {
+    margin: -5% 0 0 0;
+    padding: 0;
+  }
+  .hello-show .scroll i {
+    color: #b5523b !important;
+    font-size: 30px;
+  }
+  .hello-show .helloContent {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .hello-hide {
+    display: none;
+  }
+
+
+  /*info screen*/
+  .infoHeading {
+    padding: 5%;
+    height:300px;
+    width:100%;
+  }
+  #backshape .wrapper {
+    margin:50px auto auto;
+    width:100%;
+    padding:0 5%;
+    transform:skew(0deg,-5deg);
+  -ms-transform:skew(0deg,-10deg);
+  -webkit-transform:skew(0deg,-5deg);
+  }
+  .infoText {
+    padding-top: 2%;
+    width:60%;
+    min-height:200px;
+    margin:2%;
+    transform:skew(0deg,-5deg);
+  -ms-transform:skew(0deg,-10deg); /* IE 9 */
+  -webkit-transform:skew(0deg,0deg); /* Safari and Chrome */
+  }
+  #backshape {
+    margin-top:-100px;
+    width:100%;
+    background:#c9e7f0;
+    transform:skew(0deg,10deg);
+  -ms-transform:skew(0deg,10deg); /* IE 9 */
+  -webkit-transform:skew(0deg,5deg); /* Safari and Chrome */
   }
 }
