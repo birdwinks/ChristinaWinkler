@@ -469,4 +469,18 @@ footer {
   -ms-transform:skew(0deg,10deg); /* IE 9 */
   -webkit-transform:skew(0deg,5deg); /* Safari and Chrome */
   }
+
+
+
+  /* ABOUT SCREEN */
+  .about {
+    background-image: url('../images/aboutMe.jpg');
+    max-width: 100%;
+    background-position: 50% 40%;
+  }
+  .about p {
+    padding: 10% 5% 62% 20%;
+    text-align: right;
+  }
+
 }
