@@ -3,9 +3,6 @@ $( document ).ready(function() {
     //console.log( "ready!" );
     //jQuery starts
 
-
-
-
 // SMOOTH SCROLL
 function scrollToSection(event) {
 
@@ -39,10 +36,6 @@ $('a').on('click', scrollToSection);
 
 
 // STICKY MENU
-// Attach sticky function to ID "sticky-menu"
-// $("#sticky-menu").sticky({
-//   topSpacing: 0
-// });
 
 $(window).scroll(function() {
 
@@ -97,6 +90,7 @@ $('.flexslider').flexslider({
 
 
 
+// MAKE MY EXTERNAL LINKS WORK
 
 //closing jQuery
 });
