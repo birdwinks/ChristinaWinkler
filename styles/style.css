@@ -1,8 +1,8 @@
 /*GENERAL*/
 * {
   -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   /*border:1px solid black;*/
 }
 
@@ -31,6 +31,8 @@ a {
 }
 i {
   color: #69b4d4;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 i:hover {
   color: #b5523b;
@@ -38,6 +40,10 @@ i:hover {
 .getStarted {
   background-color: #b5523b;
   color: #c9e7f0;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .getStarted:hover {
   background-color: #69b4d4;
@@ -45,9 +51,6 @@ i:hover {
 }
 
 /*NAVIGATION*/
-nav img{
-  width: 18%;
-}
 
 /*making sticky menu fade on scrolling*/
 .navContainer {
@@ -81,11 +84,16 @@ nav img{
   position: relative;
   z-index: 2;
 }
-
-
+/*positioning of nav items*/
 .menuLinks {
   display:flex !important;
   justify-content: space-between !important;
+  align-items: center !important;
+  padding-right: 2%;
+}
+.logo {
+  max-width: 100%;
+  padding-left: 2%;
 }
 
 
@@ -116,8 +124,12 @@ nav.socialMedia {
 nav.socialMedia a {
   margin: 2%;
 }
-.helloButton {
+.divButton {
   padding: 2%;
+}
+.helloButton {
+  display: inline-block;
+  padding: 3%;
 }
 .scroll {
   font-size: 50px;
@@ -155,6 +167,7 @@ nav.socialMedia a {
 -webkit-transform:skew(0deg,-5deg);
 }
 .infoText {
+  padding-top: 5%;
   float:left;
   width:29%;
   min-height:200px;
@@ -169,7 +182,7 @@ nav.socialMedia a {
   float:left;
   margin-top:-100px;
   width:100%;
-  background:white;
+  background:#c9e7f0;
   transform:skew(0deg,10deg);
 -ms-transform:skew(0deg,10deg); /* IE 9 */
 -webkit-transform:skew(0deg,5deg); /* Safari and Chrome */
@@ -231,6 +244,11 @@ nav.socialMedia a {
   object-fit: cover;
 }
 
+.servButton {
+  display: inline-block;
+  padding: 1%;
+}
+
 
 
 
@@ -261,6 +279,8 @@ nav.socialMedia a {
   font-family: 'Old Standard TT', serif;
   border: 1px solid #594448;
   color: #594448;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 .contact button:hover{
   background-color: #69b4d4;
