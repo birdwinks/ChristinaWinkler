@@ -439,40 +439,17 @@ footer {
 
 
   /*info screen*/
-  .infoHeading {
-    padding: 5%;
-    height:300px;
-    width:100%;
-  }
   #backshape .wrapper {
     margin:50px auto auto;
-    width:100%;
-    padding:0 5%;
-    transform:skew(0deg,-5deg);
-  -ms-transform:skew(0deg,-10deg);
-  -webkit-transform:skew(0deg,-5deg);
   }
   .infoText {
     padding-top: 2%;
     width:60%;
-    min-height:200px;
-    margin:2%;
-    transform:skew(0deg,-5deg);
-  -ms-transform:skew(0deg,-10deg); /* IE 9 */
-  -webkit-transform:skew(0deg,0deg); /* Safari and Chrome */
-  }
-  #backshape {
-    margin-top:-100px;
-    width:100%;
-    background:#c9e7f0;
-    transform:skew(0deg,10deg);
-  -ms-transform:skew(0deg,10deg); /* IE 9 */
-  -webkit-transform:skew(0deg,5deg); /* Safari and Chrome */
   }
 
 
 
-  /* ABOUT SCREEN */
+  /* about screen */
   .about {
     background-image: url('../images/aboutMe.jpg');
     max-width: 100%;
@@ -483,4 +460,25 @@ footer {
     text-align: right;
   }
 
+
+
+  /* services screen */
+  .services h2 {
+    margin-top: 10%;
+  }
+  #servSlide {
+    margin-top: 15%;
+  }
+  .servButton {
+    margin-top: 23%;
+  }
+
+
+  /* contact screen */
+  .contact h2 {
+    padding-top: 20%;
+  }
+  .contForm {
+    padding: 10% 20% 0 10%;
+  }
 }
