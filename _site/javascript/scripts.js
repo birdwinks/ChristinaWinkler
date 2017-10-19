@@ -7,10 +7,7 @@ $( document ).ready(function() {
 function scrollToSection(event) {
 
   // Log
-  console.log('Clicked on anchor element');
-
-  // Prevent jumping to the section (default behaviour)
-  event.preventDefault();
+  //console.log('Clicked on anchor element');
 
   // Get anchor element hash
   var element = event.currentTarget,
@@ -31,7 +28,6 @@ function scrollToSection(event) {
 }
 // Bind events
 $('a').on('click', scrollToSection);
-
 
 
 
@@ -88,9 +84,6 @@ $('.flexslider').flexslider({
 
 });
 
-
-
-// MAKE MY EXTERNAL LINKS WORK
 
 //closing jQuery
 });
