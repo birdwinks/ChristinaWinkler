@@ -1,3 +1,10 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*border:1px solid black;*/
+}
+
 /*KEYFRAMES*/
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
@@ -22,12 +29,6 @@
 
 
 /*GENERAL*/
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  /*border:1px solid black;*/
-}
 
 body {
   font-family: 'Old Standard TT', serif;
@@ -172,51 +173,23 @@ nav.socialMedia a {
 
 /*INFO*/
 .info {
+  background-image: url('../images/bg-info.jpg');
+  max-width: 100%;
   min-height: 100vh;
 }
-.infoHeading {
-  background-color: #b5523b;
-  padding: 5%;
-  text-align: right;
-  height:300px;
-  width:100%;
-  background-size:cover;
-  position:relative;
-  z-index:-1;
+.infoText p {
+  line-height: 1.5;
+  font-size: 18px;
 }
 .infoHeading h2 {
   color: #c9e7f0;
-}
-#backshape .wrapper {
-  display:block;
-  float:left;
-  margin:50px auto 200px;
-  width:100%;
-  padding:0 5%;
-  transform:skew(0deg,-5deg);
--ms-transform:skew(0deg,-10deg);
--webkit-transform:skew(0deg,-5deg);
+  text-align: right;
+  padding: 10% 5% 0 0;
 }
 .infoText {
-  padding-top: 5%;
-  float:left;
-  width:29%;
-  min-height:200px;
+  padding-top: 10%;
+  width:40%;
   margin:2%;
-  transform:skew(0deg,-5deg);
--ms-transform:skew(0deg,-10deg); /* IE 9 */
--webkit-transform:skew(0deg,0deg); /* Safari and Chrome */
-}
-#backshape {
-  z-index:1;
-  display:block;
-  float:left;
-  margin-top:-100px;
-  width:100%;
-  background:#c9e7f0;
-  transform:skew(0deg,10deg);
--ms-transform:skew(0deg,10deg); /* IE 9 */
--webkit-transform:skew(0deg,5deg); /* Safari and Chrome */
 }
 
 
@@ -228,13 +201,15 @@ nav.socialMedia a {
   background-image: url('../images/aboutMe.jpg');
   max-width: 100%;
   min-height: 100vh;
+  background-position: 60% 23%;
 }
 .about h2 {
-  text-align: right;
-  padding: 10% 5% 0 0;
+  padding: 10% 0 0 5%;
 }
 .about p {
-  padding: 10% 50% 10% 10%;
+  padding: 3% 5% 10% 50%;
+  line-height: 1.5;
+  font-size: 18px;
 }
 
 
@@ -266,8 +241,11 @@ nav.socialMedia a {
   padding-top: 5%;
 }
 #servSlide .slides li p{
-  padding: 0 10%;
+  padding: 0 20%;
   text-align: center;
+}
+#servSlide .slides p{
+  color: #594448;
 }
 .dot {
   color: #69b4d4;
