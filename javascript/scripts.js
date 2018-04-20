@@ -68,22 +68,12 @@ $('a').on('click', changeBodyClass);
 
 
 
-// ADD SLIDER
-// Send a message to console after window load
-console.log('Window loaded!');
 
-// Assign flexslider functoin to class .flexslider
-$('.flexslider').flexslider({
-
-  // Customize flexslider properties
-  animation: "slide",
-  slideshowSpeed: 5000,
-  animationSpeed: 1000,
-  slideshow: false,
-  directionNav: false
-
+// FLIPPING SERVICE CARDS
+$(".card").flip({
+  axis: 'y',
+  trigger: 'click'
 });
-
 
 //closing jQuery
 });
