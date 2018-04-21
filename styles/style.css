@@ -322,277 +322,6 @@ nav.socialMedia a {
 }
 
 
-/*FOOTER*/
-footer {
-  text-align: center;
-}
-footer i {
-  font-size: 18px;
-}
-footer nav {
-  padding-top: 2%;
-}
-
-
-
-
-
-
-/*MOBILE MENU STYLES*/
-#mobile-navigation{
-  position: absolute !important;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(.96);
-}
-#container.mobile-menu-visible #mobile-navigation{
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1);
-}
-.hamburger {
-  position: fixed;
-  z-index: 999;
-}
-#container i {
-  color: #69b4d4 !important;
-}
-.nav-show {
-  padding-top: 2%;
-}
-
-/* HELPERS */
-.padding{
-  padding: 40px;
-}
-.margin-top-bottom{
-  margin: 40px 0;
-}
-.round-corners{
-  border-radius: 4px;
-}
-.bg{
-  background-color: #c9e7f0;
-}
-.center{
-  text-align: center;
-}
-#container .hamburger i {
-  color: #b5523b;
-}
-.animate{
-  transition: all 172ms ease-out;
-}
-
-  /*define when to show mobile menu*/
-
-.nav-show {
-  display: none;
-}
-
-
-
-
-/*RESPONSIVE STYLES*/
-
-
-/*for phones*/
-@media all and (max-width:568px){
-
-  /*mobile navigation*/
-  .nav-show {
-    display: block;
-  }
-  .nav-hide {
-    display: none;
-  }
-
-
-  /*general styling*/
-  h1 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 15px;
-  }
-  footer {
-    font-size: 10px;
-  }
-
-
-  /*hello screen*/
-  .hello-show {
-    display: block;
-  }
-
-  .hello-show .helloImage{
-    max-width: 60%;
-    margin: -10% 0 0 0;
-    padding: 0;
-  }
-  .hello-show i {
-    font-size: 20px;
-  }
-  .hello-show .scroll {
-    margin: -10% 0 0 0 !important;
-    padding: 0 !important;
-  }
-  .hello-show .scroll i {
-    color: #b5523b !important;
-    font-size: 30px;
-
-  }
-  .hello-show .helloContent {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .hello-hide {
-    display: none;
-  }
-
-
-  /*info screen*/
-  .infoText {
-    padding: 30% 0 0 0 !important;
-    width:90% !important;
-  }
-
-
-
-  /* about screen */
-  .about {
-    background-image: url('../images/aboutMe.jpg');
-    max-width: 100%;
-    background-position: 50% 40%;
-    height: 100vh;
-  }
-  .about p {
-    font-size:14px;
-    padding: 3% 5% 0% 15% !important;
-    text-align: right;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-
-
-
-  /* services screen */
-  .front h3{
-    text-decoration: underline;
-    font-size: 20px;
-  }
-
-
-  /* contact screen */
-  .contact h2 {
-    padding-top: 20%;
-  }
-  .contForm {
-    padding: 10% 20% 0 10%;
-  }
-  .contForm p, label {
-    font-size: 12px;
-  }
-}
-
-
-
-/*for tablets*/
-@media all and (max-width:1024px){
-
-
-  /*general styling*/
-  h1 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 15px;
-  }
-
-
-  /*hello screen*/
-  .hello-show {
-    display: block;
-  }
-
-  .hello-show .helloImage{
-    max-width: 60%;
-    margin: -10% 0 0 0;
-    padding: 2%;
-  }
-  .hello-show i {
-    font-size: 20px;
-  }
-  .hello-show .scroll {
-    margin: 0;
-    padding: 0;
-  }
-  .hello-show .scroll i {
-    color: #b5523b !important;
-    font-size: 30px;
-  }
-  .hello-show .helloContent {
-    margin-bottom: 0;
-    padding: 10% 0 0 0;
-  }
-  .hello-hide {
-    display: none;
-  }
-
-
-  /*info screen*/
-  .infoText {
-    padding-top: 40%;
-    width:60%;
-  }
-
-
-
-  /* about screen */
-  .about {
-    background-image: url('../images/aboutMe.jpg');
-    max-width: 100%;
-    background-position: 50% 40%;
-    height: 100vh;
-  }
-  .about p {
-    padding: 10% 5% 10% 20%;
-    text-align: right;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-
-
-
-  /* services screen */
-  .front h3{
-    text-decoration: underline;
-  }
-
-
-  /* contact screen */
-  .contact h2 {
-    padding-top: 20%;
-  }
-  .contForm {
-    padding: 10% 20% 0 10%;
-  }
-}
-
-
-
-
-
-
 
 /*GALLERY PHOTOGRAPHY*/
 
@@ -610,7 +339,6 @@ footer nav {
     max-width: 100%;
     object-fit: cover;
 }
-
 /*form grid*/
 .wrapper{
   display:grid;
@@ -822,32 +550,202 @@ footer nav {
 }
 
 
-/*MOBILE FRIENDLY GALLERY*/
+/*FOOTER*/
+footer {
+  text-align: center;
+}
+footer i {
+  font-size: 18px;
+}
+footer nav {
+  padding-top: 2%;
+}
+
+
+
+
+
+
+/*MOBILE MENU STYLES*/
+#mobile-navigation{
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.96);
+}
+#container.mobile-menu-visible #mobile-navigation{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.hamburger {
+  position: fixed;
+  z-index: 999;
+}
+#container i {
+  color: #69b4d4 !important;
+}
+.nav-show {
+  padding-top: 2%;
+}
+
+/* HELPERS */
+.padding{
+  padding: 40px;
+}
+.margin-top-bottom{
+  margin: 40px 0;
+}
+.round-corners{
+  border-radius: 4px;
+}
+.bg{
+  background-color: #c9e7f0;
+}
+.center{
+  text-align: center;
+}
+#container .hamburger i {
+  color: #b5523b;
+}
+.animate{
+  transition: all 172ms ease-out;
+}
+
+  /*define when to show mobile menu*/
+
+.nav-show {
+  display: none;
+}
+
+
+
+
+/*RESPONSIVE STYLES*/
+
+
+/*for phones*/
 @media all and (max-width:568px){
 
+  /*mobile navigation*/
+  .nav-show {
+    display: block;
+  }
+  .nav-hide {
+    display: none;
+  }
+
+
+  /*general styling*/
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  footer {
+    font-size: 10px;
+  }
+
+
+  /*hello screen*/
+  .hello-show {
+    display: block;
+  }
+
+  .hello-show .helloImage{
+    max-width: 60%;
+    margin: -10% 0 0 0;
+    padding: 0;
+  }
+  .hello-show i {
+    font-size: 20px;
+  }
+  .hello-show .scroll {
+    margin: -10% 0 0 0 !important;
+    padding: 0 !important;
+  }
+  .hello-show .scroll i {
+    color: #b5523b !important;
+    font-size: 30px;
+
+  }
+  .hello-show .helloContent {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .hello-hide {
+    display: none;
+  }
+
+
+  /*info screen*/
+  .infoText {
+    padding: 30% 0 0 0 !important;
+    width:90% !important;
+  }
+
+
+
+  /* about screen */
+  .about {
+    background-image: url('../images/aboutMe.jpg');
+    max-width: 100%;
+    background-position: 50% 40%;
+    height: 100vh;
+  }
+  .about p {
+    font-size:14px;
+    padding: 3% 5% 0% 15% !important;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+
+
+  /* services screen */
+  .front h3{
+    text-decoration: underline;
+    font-size: 20px;
+  }
+
+
+  /* contact screen */
+  .contact h2 {
+    padding-top: 20%;
+  }
+  .contForm {
+    padding: 10% 20% 0 10%;
+  }
+  .contForm p, label {
+    font-size: 12px;
+  }
+
+  /* mobile photo gallery*/
   .fill {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
+      display: block;
   }
   .fill img {
-      flex-shrink: 0;
-      min-height: 100%;
-      min-width: 100%;
+      min-height: inherit;
+      min-width: inherit;
       max-width: 100%;
-      object-fit: cover;
   }
   .wrapper{
     display:grid;
-    grid-template-columns:repeat(6, 1fr);
-    grid-auto-rows:minmax(100px, auto);
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
     grid-gap:1em;
-    justify-items: stretch;
-    align-items: stretch;
   }
   .box{
-    grid-column:2/6;
+    grid-column: auto;
     grid-row: auto;
     padding: 0;
     margin: 0;
@@ -857,5 +755,99 @@ footer nav {
   }
   .box46 {
     padding-bottom: 2em;
+  }
+}
+
+
+
+/*for tablets*/
+@media all and (max-width:1024px){
+
+
+  /*general styling*/
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+
+
+  /*hello screen*/
+  .hello-show {
+    display: block;
+  }
+
+  .hello-show .helloImage{
+    max-width: 60%;
+    margin: -10% 0 0 0;
+    padding: 2%;
+  }
+  .hello-show i {
+    font-size: 20px;
+  }
+  .hello-show .scroll {
+    margin: 0;
+    padding: 0;
+  }
+  .hello-show .scroll i {
+    color: #b5523b !important;
+    font-size: 30px;
+  }
+  .hello-show .helloContent {
+    margin-bottom: 0;
+    padding: 10% 0 0 0;
+  }
+  .hello-hide {
+    display: none;
+  }
+
+
+  /*info screen*/
+  .infoText {
+    padding-top: 40%;
+    width:60%;
+  }
+
+
+
+  /* about screen */
+  .about {
+    background-image: url('../images/aboutMe.jpg');
+    max-width: 100%;
+    background-position: 50% 40%;
+    height: 100vh;
+  }
+  .about p {
+    padding: 10% 5% 10% 20%;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+
+
+  /* services screen */
+  .front h3{
+    text-decoration: underline;
+  }
+
+
+  /* contact screen */
+  .contact h2 {
+    padding-top: 20%;
+  }
+  .contForm {
+    padding: 10% 20% 0 10%;
+  }
+}
+
+/* for extra large screens*/
+@media screen and (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
   }
 }
