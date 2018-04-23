@@ -122,7 +122,38 @@ i:hover {
   max-width: 100%;
   padding-left: 2%;
 }
-
+/*language dropdown*/
+.lang {
+  max-width: 100%;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropbtn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
 /*HELLO*/
@@ -196,23 +227,6 @@ nav.socialMedia a {
 
 
 
-/*ABOUT*/
-.about {
-  background-image: url('../images/aboutMe.jpg');
-  max-width: 100%;
-  min-height: 100vh;
-  background-position: 60% 23%;
-}
-.about h2 {
-  padding: 10% 0 0 5%;
-}
-.about p {
-  padding: 3% 5% 10% 50%;
-  line-height: 1.5;
-  font-size: 18px;
-}
-
-
 
 
 /*SERVICES*/
@@ -255,7 +269,7 @@ nav.socialMedia a {
   cursor: pointer;
 }
 .back a {
-  text-decoration: underline;
+  color: #b5523b;
 }
 .back:hover {
   cursor: pointer;
@@ -272,6 +286,27 @@ nav.socialMedia a {
   display: inline-block;
   padding: 1%;
 }
+
+
+/*ABOUT*/
+.about {
+  background-image: url('../images/aboutMe.jpg');
+  max-width: 100%;
+  min-height: 100vh;
+  background-position: 60% 23%;
+}
+.about h2 {
+  padding: 10% 0 0 5%;
+}
+.about p {
+  padding: 3% 5% 10% 50%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.about a {
+  color: #b5523b;
+}
+
 
 /*CONTACT*/
 .contact {
@@ -550,9 +585,20 @@ nav.socialMedia a {
 }
 
 
+
+/*LEGAL*/
+.legal {
+  padding: 5% 8%;
+}
+.legal a{
+  color: #b5523b;
+}
+
+
 /*FOOTER*/
 footer {
   text-align: center;
+  font-size: 14px;
 }
 footer i {
   font-size: 18px;
@@ -560,9 +606,6 @@ footer i {
 footer nav {
   padding-top: 2%;
 }
-
-
-
 
 
 
