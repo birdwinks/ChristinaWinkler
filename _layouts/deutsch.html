@@ -4,7 +4,7 @@
   <!-- meta tag for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS normalize - to be same across all browsers -->
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
   <!-- Gridlex - adding grids -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css">
   <!-- Fonts from Google - CHOOSE FONTS -->
@@ -16,10 +16,10 @@
   <!-- Icon Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <!-- My own Stylesheet -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
   <!-- Site Title and other info -->
     <title>Christina Creative | Get your business online</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="/images/logo.png">
     <meta name="description" content="Hello my friend, let me help you with all things digital for your web presence. Creative mind to get your business online, from web development and digital marketing to writing, photography and blogging.">
     <meta name="keywords" content="web developer, photographer, writer, digital marketer, freelancer, travel blogger">
     <meta name="author" content="Christina Winkler">
@@ -33,15 +33,22 @@
           <div class="bg-menu transition"></div>
           <nav id="sticky-menu" class="menu grid-spaceBetween mob-hide">
             <div class="col-2 logoDiv">
-              <a href="https://christinawinkler.com" class="logo"><img src="images/logo.png" alt="my logo"></a>
+              <a href="https://christinawinkler.com" class="logo"><img src="/images/logo.png" alt="my logo"></a>
             </div>
             <div class="col-6 menuLinks">
               <a href="https://christinawinkler.com">home</a>
-              <a href="https://christinawinkler.com#about">about</a>
-              <a href="https://christinawinkler.com#services">services</a>
-              <a href="https://christinawinkler.com/photography">photography</a>
+              <a href="https://christinawinkler.com#services">leistungen</a>
+              <a href="https://christinawinkler.com#about">über</a>
+              <a href="https://christinawinkler.com/photography">fotografie</a>
               <a href="http://birdwinks.com" target="_blank">blog</a>
-              <a href="https://christinawinkler.com#contact">contact</a>
+              <a href="https://christinawinkler.com#contact">kontakt</a>
+              <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn"><img src="/images/deutsch.png" alt="deutsch"></a>
+                <div class="dropdown-content">
+                  <a href="https://christinawinkler.com/de" class="lang"><img src="/images/deutsch.png" alt="deutsch"></a>
+                  <a href="https://christinawinkler.com" class="lang"><img src="/images/english.png" alt="english"></a>
+                </div>
+              </div>
             </div>
           </nav>
         </div>
@@ -51,7 +58,7 @@
       <!-- MOBILE NAV -->
       <div id="container" class="nav-show">
         <nav>
-          <a href="#top" title="home" class="toggle-mobile-menu hamburger">
+          <a href="#" title="home" class="toggle-mobile-menu hamburger">
             <i class="fas fa-bars"></i>
           </a>
         </nav>
@@ -60,9 +67,9 @@
             <i class="fas fa-times"></i>
           </a>
           <a class="col-12 center" href="https://christinawinkler.com" class="toggle-mobile-menu">home</a>
-          <a class="col-12 center" href="https://christinawinkler.com#about" class="toggle-mobile-menu">about</a>
           <a class="col-12 center" href="https://christinawinkler.com#services" class="toggle-mobile-menu">services</a>
-          <a class="col-12 center" href="#top" class="toggle-mobile-menu">photography</a>
+          <a class="col-12 center" href="https://christinawinkler.com#about" class="toggle-mobile-menu">about</a>
+          <a class="col-12 center" href="https://christinawinkler.com/photography" class="toggle-mobile-menu">photography</a>
           <a class="col-12 center" href="http://birdwinks.com" class="toggle-mobile-menu" target="_blank">blog</a>
           <a class="col-12 center" href="https://christinawinkler.com#contact" class="toggle-mobile-menu">contact</a>
         </nav>
@@ -83,7 +90,7 @@
         <a href="https://www.linkedin.com/in/christina-winkler-b20b41b3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       </nav>
       <p>christinawinkler.com &#169;
- Copyright 2017-2018</p>
+ Copyright 2018 | <a href="https://christinawinkler.com/legal-notice">Legal Notice</a></p>
     </footer>
 <!-- add JavaScript & jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
