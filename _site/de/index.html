@@ -253,14 +253,21 @@
     <section id="contact" class="contact">
       <h2>Lass uns Tacheles reden<span class="dot">.</span></h2>
       <div class="contForm">
-        <form class="grid" method="POST" action="https://formspree.io/hello@christinawinkler.com">
+        <form id="contactform" class="grid" method="POST" action="https://formspree.io/hello@christinawinkler.com">
           <label class="col-4" for="name">NAME</label>
           <input class="col-8" type="text" name="name">
           <label class="col-4" for="email">E-MAIL</label>
           <input class="col-8" type="email" name="email">
           <label class="col-4" for="message">ERZ&Auml;HL MIR MEHR</label>
           <textarea class="col-8" name="message"></textarea>
-          <div class="col-8 .grid-right">
+          <label class="col-4" for="privacy"></label>
+          <label class="col-4" for="checkbox"></label>
+          <div class="col-8 grid-right">
+             <div class="col-12 privacy">
+               <input type="checkbox" value="confirm-privacy" name="confirm-privacy"><span style="font-size:14px;">Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Die Daten werden nach abgeschlossener Bearbeitung Ihrer Anfrage gel&ouml;scht. Hinweis: Sie k&ouml;nnen Ihre Einwilligung jederzeit f&uuml;r die Zukunft per E-Mail an <a href="mailto:hello@christinawinkler.com">hello@christinawinkler.com</a> widerrufen. Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer <a href="https://christinawinkler.com/de/datenschutz" target="_blank">Datenschutzerkl&auml;rung</a>.</span></input>&nbsp;<span id="confirm_terms_hint"></span><br>
+             </div>
+           </div>
+          <div class="col-8 grid-right">
             <button class="col-12" type="submit">Senden</button>
           </div>
         </form>

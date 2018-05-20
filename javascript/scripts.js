@@ -75,5 +75,20 @@ $(".card").flip({
   trigger: 'click'
 });
 
+
+// MANDATORY CHECKBOX CONTACT FORM
+$(document).ready(function() {
+    $('#contactform').submit(function() {
+        if ($('form#contactform input:checkbox[name=confirm-privacy]').is(':checked')) {
+            return true;
+        } else {
+            $('#confirm_terms_hint').text('Please try again - you need to check the box to move on');
+            $('#confirm_terms_hint').css('font-weight', 'bold');
+            return false;
+        }
+    });
+});
+
+
 //closing jQuery
 });

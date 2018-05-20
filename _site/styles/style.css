@@ -346,15 +346,10 @@ nav.socialMedia a {
   color: #c9e7f0;
   cursor: pointer;
 }
-.sure {
-  font-size: 14px;
-}
-.sure a {
+.privacy a {
   color: #b5523b;
 }
-.sure a:hover {
-  text-decoration: underline;
-}
+
 
 
 
