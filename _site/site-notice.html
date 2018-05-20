@@ -47,6 +47,28 @@
       ga('set', 'anonymizeIp', true);
       ga('send', 'pageview');
     </script>
+  <!-- COOKIE CONSENT -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#69b4d4",
+      "text": "#594448"
+    },
+    "button": {
+      "background": "#b5523b"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "message": "I agree to the use cookies to ensure continuous improvement of this website.",
+    "href": "https://christinawinkler.com/privacy-policy"
+  }
+  })});
+  </script>
 </head>
   <body>
 
